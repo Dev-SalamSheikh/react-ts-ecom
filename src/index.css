@@ -26,3 +26,36 @@ body {
 .women:hover .womensdropdown {
   display: block !important;
 }
+
+@media screen and (min-width: 1850px) {
+  .homebanner {
+    height: 85vh !important;
+  }
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, 50%);
+  top: var(--swiper-pagination-top, auto);
+  left: 96%;
+  width: max-content;
+  rotate: 90deg;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: #171b26;
+}
+
+.swiper-pagination-bullet {
+  width: var(
+    --swiper-pagination-bullet-width,
+    var(--swiper-pagination-bullet-size, 10px)
+  );
+  height: var(
+    --swiper-pagination-bullet-height,
+    var(--swiper-pagination-bullet-size, 10px)
+  );
+}
