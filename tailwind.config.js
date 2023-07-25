@@ -19,6 +19,7 @@ export default {
       },
       boxShadow: {
         dropdown: "0px 20px 44px 0px rgba(16, 24, 40, 0.16)",
+        supprtShadow: "4px 4px 16px 0px rgba(73, 73, 73, 0.08)",
       },
     },
   },
