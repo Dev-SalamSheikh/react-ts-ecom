@@ -8,6 +8,7 @@ import Home from "./pages/Home.tsx";
 import Dashboard from "./pages/Dashboard.tsx";
 import Category from "./pages/Category.tsx";
 import ProductUpload from "./pages/ProductUpload.tsx";
+import BrandCategory from "./pages/BrandCategory.tsx";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/category",
         element: <Category />,
+      },
+      {
+        path: "brand-category",
+        element: <BrandCategory />,
       },
     ],
   },

@@ -3,10 +3,18 @@ import Button from "./Button";
 import MensDropdown from "./MensDropdown";
 import WomensDropdown from "./WomensDropdown";
 
-const Navbar = () => {
+interface NavbarProps {
+  homepage: boolean;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ homepage }) => {
   return (
     // Navbar Start
-    <div className="bg-transparent absolute top-0 left-0 w-full h-24 flex items-center justify-center navbar">
+    <div
+      className={`${
+        homepage === true ? "bg-transparent" : "bg-navBG"
+      } absolute top-0 left-0 w-full h-24 flex items-center justify-center navbar`}
+    >
       {/* Container Start */}
       <div className="container mx-auto lg:w-10/12 w-11/12 h-full">
         <div className="w-full flex items-center justify-between h-full">

@@ -1,9 +1,11 @@
+import Navbar from "../components/Navbar";
 import CatHeading from "../components/category/CatHeading";
 import Filters from "../components/category/Filters";
 
 const Category = () => {
   return (
     <div className="w-full">
+      <Navbar homepage={false} />
       {/* Banner */}
       <CatHeading />
       {/* content start */}

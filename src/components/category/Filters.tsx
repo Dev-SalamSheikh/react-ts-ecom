@@ -262,6 +262,21 @@ const Filters = () => {
     },
   ];
 
+  const options = [
+    {
+      id: 1,
+      option: "Featured One",
+    },
+    {
+      id: 2,
+      option: "Featured Two",
+    },
+    {
+      id: 3,
+      option: "Featured Three",
+    },
+  ];
+
   // State for toggling the active button
   const [activeBtn, setActiveBtn] = useState(1);
   return (
@@ -269,7 +284,7 @@ const Filters = () => {
       {/* filter cards */}
       <div className="my-16">
         {/* heading */}
-        <FilterHeading />
+        <FilterHeading heading="Category" options={options} />
 
         {/* Categories */}
         <div className="w-full flex items-start justify-between gap-16 mt-8">

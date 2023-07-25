@@ -4,12 +4,12 @@ const UploadProductsContainer = () => {
   return (
     <div className="py-16">
       {/* Cards*/}
-      <ProjectUploadCard />
-      <ProjectUploadCard />
-      <ProjectUploadCard />
-      <ProjectUploadCard />
-      <ProjectUploadCard />
-      <ProjectUploadCard />
+      <ProjectUploadCard key="card-1" />
+      <ProjectUploadCard key="card-2" />
+      <ProjectUploadCard key="card-3" />
+      <ProjectUploadCard key="card-4" />
+      <ProjectUploadCard key="card-5" />
+      <ProjectUploadCard key="card-6" />
 
       {/* Buttons */}
       <div className="text-center mt-20">
