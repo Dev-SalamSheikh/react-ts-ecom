@@ -1,11 +1,32 @@
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import MensDropdown from "../MensDropdown";
 import WomensDropdown from "../WomensDropdown";
 import AdminDropdown from "../AdminDropdown";
 
 const DashboardNavbar = () => {
   const [dropdown, setDropdown] = useState(false);
+
+  // Close Dropdown When Click outside
+  const ref = useRef<HTMLDivElement>(null);
+  const ref2 = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const closePopup = (e) => {
+      if (
+        ref.current &&
+        !ref.current.contains(e.target) &&
+        ref2.current &&
+        !ref2.current.contains(e.target)
+      ) {
+        setDropdown(false);
+      }
+    };
+    document.addEventListener("click", closePopup);
+    return () => {
+      document.removeEventListener("click", closePopup);
+    };
+  }, []);
 
   return (
     // Navbar Start
@@ -44,7 +65,7 @@ const DashboardNavbar = () => {
           </div>
 
           {/* right */}
-          <div className="flex items-center gap-4 lg:gap-8">
+          <div className="flex items-center gap-4 lg:gap-8" ref={ref}>
             {/* SVG Icon */}
             <div>
               <svg
@@ -90,7 +111,7 @@ const DashboardNavbar = () => {
               </svg>
 
               {/* Dropdown will show if the state is true */}
-              {dropdown === true ? <AdminDropdown /> : null}
+              {dropdown === true ? <AdminDropdown ref2={ref2} /> : null}
             </div>
           </div>
         </div>

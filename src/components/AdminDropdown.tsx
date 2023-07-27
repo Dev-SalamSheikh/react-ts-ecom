@@ -4,7 +4,7 @@ import Icon2 from "../assets/admindropdown/settings.png";
 import Icon3 from "../assets/admindropdown/logout.png";
 import { NavLink } from "react-router-dom";
 
-const AdminDropdown = () => {
+const AdminDropdown = ({ ref2 }) => {
   // Navlinks
   const dropdownMan = [
     {
@@ -28,7 +28,10 @@ const AdminDropdown = () => {
   ];
 
   return (
-    <div className="mensdropdown bg-white w-max py-2 px-4 rounded-xl shadow-dropdown absolute top-[125%] right-0 lg:-right-6 z-50">
+    <div
+      ref={ref2}
+      className="mensdropdown bg-white w-max py-2 px-4 rounded-xl shadow-dropdown absolute top-[125%] right-0 lg:-right-6 z-50"
+    >
       {/* Dropdown icon */}
       <div className="absolute right-6 -top-[9px]">
         <svg
