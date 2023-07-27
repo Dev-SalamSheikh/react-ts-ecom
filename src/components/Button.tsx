@@ -9,7 +9,7 @@ const Button: React.FC<ButtonProps> = ({ text, bgColorCode }) => {
   return (
     <button
       style={{ backgroundColor: bgColorCode }}
-      className={`px-7 py-3 rounded-lg text-white font-medium`}
+      className={`md:px-7 md:py-3 py-3 px-5 md:text-base text-sm rounded-lg text-white font-medium`}
     >
       {text}
     </button>

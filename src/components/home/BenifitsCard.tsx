@@ -27,13 +27,20 @@ const BenifitsCard = () => {
     },
   ];
   return (
-    <div className="mt-14 mb-14 bg-white shadow-supprtShadow py-16 flex items-center justify-between gap-8">
-      {supportData?.map((item) => {
-        const { id, content, heading, img } = item;
-        return (
-          <SupportCard content={content} key={id} heading={heading} img={img} />
-        );
-      })}
+    <div className="container mx-auto lg:w-10/12 w-11/12">
+      <div className="mt-16 bg-white shadow-supprtShadow py-16 flex items-center justify-between gap-8 md:flex-row flex-col">
+        {supportData?.map((item) => {
+          const { id, content, heading, img } = item;
+          return (
+            <SupportCard
+              content={content}
+              key={id}
+              heading={heading}
+              img={img}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

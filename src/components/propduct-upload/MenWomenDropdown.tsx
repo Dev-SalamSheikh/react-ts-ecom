@@ -141,7 +141,7 @@ const MenWomenDropdown = () => {
     },
   ];
   return (
-    <div className="w-full flex items-start justify-between gap-4 pb-14 border-b border-b-dashboardBorder">
+    <div className="w-full flex items-start justify-between md:flex-row flex-col gap-4 pb-14 border-b border-b-dashboardBorder">
       {/* Mens Dropdown */}
       <DropdownCard key="mens-dropdown" heading="Man" data={dropdownMan} />
 

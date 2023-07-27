@@ -11,7 +11,7 @@ type DropdownCardProps = {
 
 const DropdownCard: React.FC<DropdownCardProps> = ({ data, heading }) => {
   return (
-    <div>
+    <div className="w-full">
       {/* heading */}
       <div className="mt-10 mb-3 pb-3 border-b border-b-dashboardBorder">
         <h1 className="text-placeholderColor2 font-semibold text-xl">

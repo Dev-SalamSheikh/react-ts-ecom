@@ -279,15 +279,16 @@ const Filters = () => {
 
   // State for toggling the active button
   const [activeBtn, setActiveBtn] = useState(1);
+
   return (
     <>
       {/* filter cards */}
-      <div className="my-16">
+      <div className="lg:mt-16 mt-10 lg:mb-32 mb-20">
         {/* heading */}
         <FilterHeading heading="Category" options={options} />
 
         {/* Categories */}
-        <div className="w-full flex items-start justify-between gap-16 mt-8">
+        <div className="w-full flex items-start justify-between md:flex-row flex-col gap-10 lg:gap-16 mt-8">
           {/* Left Side Buttons */}
           <FilterSidebar
             key={"sidebar"}
@@ -296,7 +297,7 @@ const Filters = () => {
             setActiveBtn={setActiveBtn}
           />
 
-          <div className="w-[80%]">
+          <div className="w-full md:w-[75%] lg:w-[80%]">
             {activeBtn === 1 ? (
               <TshirtOutlet key="Tshirts" data={tshirtData} />
             ) : activeBtn === 2 ? (

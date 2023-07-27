@@ -14,9 +14,9 @@ const ProjectUploadCard = () => {
   };
 
   return (
-    <div className="w-full flex justify-between gap-20 mb-10">
+    <div className="w-full flex justify-between md:flex-row flex-col lg:gap-20 gap-10 mb-10">
       {/* Left Side */}
-      <div className="w-3/12 bg-uploadImageBG flex items-center justify-center">
+      <div className="w-full md:w-3/12 bg-uploadImageBG flex items-center justify-center md:h-auto h-[140px]">
         {!selectedImage ? (
           <div>
             <input
@@ -54,23 +54,23 @@ const ProjectUploadCard = () => {
       </div>
 
       {/* Right side */}
-      <div className="w-9/12 py-2">
+      <div className="w-full md:w-9/12 py-2">
         {/* Upper Layer */}
         <div className="flex items-center justify-between gap-6">
           {/* Name Box */}
           <div className="w-6/12 flex items-center gap-3">
-            <p className="text-categoryText">Name:</p>
+            <p className="text-categoryText md:text-base text-sm">Name:</p>
             <input
               type="text"
-              className="w-full bg-transparent outline-none border border-dashboardBorder rounded-lg px-4 py-2"
+              className="w-full bg-transparent outline-none border border-dashboardBorder rounded-lg px-4 py-2 md:text-base text-sm"
             />
           </div>
 
           {/* Price Box */}
           <div className="w-5/12 flex items-center gap-3">
-            <p className="text-categoryText">Price:</p>
+            <p className="text-categoryText md:text-base text-sm">Price:</p>
             <div className="px-4 py-2 border border-dashboardBorder rounded-lg w-full">
-              <select className="bg-transparent outline-none w-full">
+              <select className="bg-transparent outline-none w-full md:text-base text-sm">
                 <option value="50">$50.00</option>
               </select>
             </div>
@@ -78,8 +78,8 @@ const ProjectUploadCard = () => {
         </div>
 
         {/* Bottom layer */}
-        <div className="w-full flex items-center gap-3 mt-9">
-          <p className="text-categoryText">Link</p>
+        <div className="w-full flex items-center gap-3 mt-4 md:mt-9">
+          <p className="text-categoryText md:text-base text-sm">Link</p>
 
           {/* Icon box */}
           <div className="w-full flex items-center gap-2 py-2 px-4 border border-dashboardBorder rounded-lg">
@@ -110,7 +110,7 @@ const ProjectUploadCard = () => {
 
             <input
               type="text"
-              className="bg-transparent outline-none border-none placeholder:text-placeholderColor"
+              className="bg-transparent outline-none border-none md:text-base text-sm placeholder:text-placeholderColor"
               placeholder="https://"
             />
           </div>

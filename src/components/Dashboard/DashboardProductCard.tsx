@@ -3,6 +3,7 @@ type ItemType = {
   id: number;
   title: string;
   price: string;
+  oldPrice: string;
   img: string;
 };
 
@@ -12,26 +13,20 @@ type DashboardProductCardProps = {
   title?: string;
 };
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import { useRef } from "react";
-import DashboardSliderCard from "./DashboardSliderCard";
+import Slider from "../Slider";
 
 const DashboardProductCard: React.FC<DashboardProductCardProps> = ({
   data,
   title,
 }) => {
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
-
   return (
     <div className="w-full mb-14">
       {/* heading */}
       <div className="flex items-center gap-6 mb-6">
         {/* text */}
-        <h2 className="text-2xl font-semibold text-themeBlackBold">{title}</h2>
+        <h2 className="text-xl md:text-2xl font-semibold text-themeBlackBold">
+          {title}
+        </h2>
 
         {/* button */}
         <div className="w-max flex items-center gap-2 py-2 px-4 border border-dashboardBorder rounded-lg cursor-pointer">
@@ -61,55 +56,14 @@ const DashboardProductCard: React.FC<DashboardProductCardProps> = ({
             </g>
           </svg>
 
-          <p className="text-base text-dropdownText">Edit</p>
+          <p className="text-sm md:text-base text-dropdownText">Edit</p>
         </div>
       </div>
 
       {/* Slider */}
       <div className="w-full flex items-center justify-between gap-1">
         {/* Slider Div */}
-        <div className="w-full">
-          <Swiper
-            className="mySwiper relative"
-            modules={[Navigation]}
-            spaceBetween={20}
-            slidesPerView={5}
-            navigation={{
-              prevEl: prevRef.current,
-              nextEl: nextRef.current,
-            }}
-          >
-            {data?.map((item) => {
-              const { id, title, price, img } = item;
-              return (
-                <SwiperSlide key={id}>
-                  <DashboardSliderCard
-                    img={img}
-                    name={title}
-                    price={price}
-                    key={id}
-                  />
-                </SwiperSlide>
-              );
-            })}
-
-            <div className="flex items-center gap-4">
-              <button
-                className="absolute left-0 top-[45%] cursor-pointer z-50"
-                ref={prevRef}
-              >
-                <i className="fa-solid fa-chevron-left text-lg text-[#1C1B1F] hover:text-themeOrange"></i>
-              </button>
-
-              <button
-                className="absolute right-0 top-[45%] cursor-pointer z-50"
-                ref={nextRef}
-              >
-                <i className="fa-solid fa-chevron-right text-lg text-[#1C1B1F] hover:text-themeOrange"></i>
-              </button>
-            </div>
-          </Swiper>
-        </div>
+        <Slider data={data} ItemView={5} />
       </div>
     </div>
   );

@@ -21,7 +21,7 @@ const DashboardNavbar = () => {
           </div>
 
           {/* middle */}
-          <div className="h-full relative">
+          <div className="h-full relative md:block hidden">
             <ul className="h-full flex items-center justify-center gap-12 text-themeBlack">
               <li className="h-full flex items-center justify-center">
                 <NavLink to="/">Home</NavLink>
@@ -44,7 +44,7 @@ const DashboardNavbar = () => {
           </div>
 
           {/* right */}
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-4 lg:gap-8">
             {/* SVG Icon */}
             <div>
               <svg
@@ -55,8 +55,8 @@ const DashboardNavbar = () => {
                 fill="none"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M11.6996 1.25C8.30403 1.25 5.67685 4.22603 6.09802 7.59536L6.17737 8.23021C6.29349 9.15916 5.95416 10.0871 5.26615 10.7219C3.84047 12.0375 3.44438 14.1315 4.29103 15.8769L4.39438 16.09C5.14053 17.6282 6.65559 18.6356 8.34689 18.7409L8.53517 19.0636C9.54796 20.7998 11.126 21.75 12.783 21.75C14.44 21.75 16.018 20.7998 17.0308 19.0636L17.2221 18.7358C18.6428 18.6235 19.9381 17.8513 20.7107 16.6373C21.8928 14.7799 21.5797 12.3432 19.9664 10.845L19.9225 10.8042C19.184 10.1183 18.8204 9.11912 18.9454 8.11901L19.01 7.60208C19.4316 4.22918 16.8017 1.25 13.4025 1.25H11.6996ZM8.76878 17.25C8.7778 17.2498 8.78682 17.2498 8.79582 17.25H16.7702C16.7792 17.2498 16.7882 17.2498 16.7972 17.25H16.8619C17.9088 17.25 18.8831 16.7152 19.4452 15.832C20.2387 14.5852 20.0285 12.9497 18.9457 11.9441L18.9018 11.9033C17.8098 10.8892 17.2721 9.41174 17.457 7.93296L17.5216 7.41603C17.8313 4.93841 15.8994 2.75 13.4025 2.75H11.6996C9.20628 2.75 7.27717 4.93526 7.58643 7.40931L7.66579 8.04416C7.84195 9.45345 7.32716 10.8611 6.2834 11.8243C5.34364 12.6915 5.08255 14.0718 5.64063 15.2223L5.74399 15.4353C6.28235 16.5452 7.40751 17.25 8.64108 17.25H8.76878ZM12.783 20.25C11.8619 20.25 10.8791 19.7877 10.1197 18.75H15.4463C14.6869 19.7877 13.7041 20.25 12.783 20.25Z"
                   fill="#2D264B"
                 />
@@ -74,7 +74,7 @@ const DashboardNavbar = () => {
                 className="w-12 h-12"
               />
 
-              <p className="ml-2 text-themeBlack">Admin</p>
+              <p className="ml-2 text-themeBlack md:text-base text-sm">Admin</p>
 
               <svg
                 xmlns="http://www.w3.org/2000/svg"

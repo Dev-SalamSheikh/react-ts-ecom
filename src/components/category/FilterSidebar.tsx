@@ -11,10 +11,12 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({
   setActiveBtn,
 }) => {
   return (
-    <div className="w-[20%]">
+    <div className="w-full md:w-[25%] lg:w-[20%]">
       {/* heading */}
       <div className="pb-3 border-b border-b-categoryBorder">
-        <p className="text-xl font-semibold text-themeBlackBold">Category</p>
+        <p className="text-base md:text-xl font-semibold text-themeBlackBold">
+          Category
+        </p>
       </div>
 
       {/* Buttons */}

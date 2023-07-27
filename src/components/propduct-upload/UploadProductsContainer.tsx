@@ -2,7 +2,7 @@ import ProjectUploadCard from "./ProjectUploadCard";
 
 const UploadProductsContainer = () => {
   return (
-    <div className="py-16">
+    <div className="py-8 md:py-16">
       {/* Cards*/}
       <ProjectUploadCard key="card-1" />
       <ProjectUploadCard key="card-2" />
@@ -12,8 +12,8 @@ const UploadProductsContainer = () => {
       <ProjectUploadCard key="card-6" />
 
       {/* Buttons */}
-      <div className="text-center mt-20">
-        <button className="px-6 py-3 border border-categoryBorder rounded-lg">
+      <div className="text-center md:mt-20 mt-14">
+        <button className="px-6 py-3 md:text-base text-sm border border-categoryBorder rounded-lg">
           Upload
         </button>
       </div>

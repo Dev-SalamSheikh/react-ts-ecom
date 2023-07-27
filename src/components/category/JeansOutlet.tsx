@@ -13,7 +13,7 @@ type JeansOutletProps = {
 
 const JeansOutlet: React.FC<JeansOutletProps> = ({ data }) => {
   return (
-    <div className="w-full grid grid-cols-3 gap-8">
+    <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-8">
       {data?.map((item) => {
         const { id, img, price, title } = item;
         return (
