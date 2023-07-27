@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
@@ -24,12 +25,12 @@ const Slider: React.FunctionComponent<SliderProps> = ({
   ItemView,
   isHomePage,
 }) => {
-  const [rerender, setRerender] = useState<string | undefined>();
+  const [, setRerender] = useState<string | undefined>();
 
   useEffect(() => {
     setRerender("anything");
     console.log("rerender calling");
-  }, [rerender]);
+  }, []);
 
   const prevRef = useRef(null);
   const nextRef = useRef(null);
