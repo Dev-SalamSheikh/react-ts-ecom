@@ -3,7 +3,7 @@ type ItemType = {
   id: number;
   title: string;
   price: string;
-  oldPrice: string;
+  oldPrice?: string;
   img: string;
 };
 

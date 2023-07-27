@@ -28,7 +28,8 @@ const Slider: React.FunctionComponent<SliderProps> = ({
 
   useEffect(() => {
     setRerender("anything");
-  }, []);
+    console.log("rerender calling");
+  }, [rerender]);
 
   const prevRef = useRef(null);
   const nextRef = useRef(null);
