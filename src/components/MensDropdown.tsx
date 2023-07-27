@@ -1,15 +1,5 @@
 import { NavLink } from "react-router-dom";
 
-// Mens Icons
-import Men1 from "../assets/dropdownMen/d-men-1.png";
-import Men2 from "../assets/dropdownMen/d-men-2.png";
-import Men3 from "../assets/dropdownMen/d-men-3.png";
-import Men4 from "../assets/dropdownMen/d-men-4.png";
-import Men5 from "../assets/dropdownMen/d-men-5.png";
-import Men6 from "../assets/dropdownMen/d-men-6.png";
-import Men7 from "../assets/dropdownMen/d-men-7.png";
-import Men8 from "../assets/dropdownMen/d-men-8.png";
-
 const MensDropdown = () => {
   // Navlinks
   const dropdownMan = [
@@ -17,51 +7,52 @@ const MensDropdown = () => {
       id: 1,
       title: "men_t-shirts",
       path: "/",
-      image: Men1,
+      image: "./images/dropdownMen/d-men-1.png",
     },
     {
       id: 2,
       title: "men_shortsleevebutton",
       path: "/",
-      image: Men2,
+      image: "./images/dropdownMen/d-men-2.png",
     },
     {
       id: 3,
       title: "men_sweatshirt",
       path: "/",
-      image: Men3,
+      image: "./images/dropdownMen/d-men-3.png",
     },
     {
       id: 4,
       title: "men_lognsleevebutton",
       path: "/",
-      image: Men4,
+      image: "./images/dropdownMen/d-men-4.png",
     },
     {
       id: 5,
       title: "men_jackets",
       path: "/",
-      image: Men5,
+      image: "./images/dropdownMen/d-men-5.png",
     },
     {
       id: 6,
       title: "men_shorts",
       path: "/",
-      image: Men6,
+      image: "./images/dropdownMen/d-men-6.png",
     },
     {
       id: 7,
       title: "men_jeans",
       path: "/",
-      image: Men7,
+      image: "./images/dropdownMen/d-men-7.png",
     },
     {
       id: 8,
       title: "men_pants",
       path: "/",
-      image: Men8,
+      image: "./images/dropdownMen/d-men-8.png",
     },
   ];
+
   return (
     <div className="mensdropdown bg-white w-max py-2 px-4 rounded-xl shadow-dropdown absolute top-full left-20 hidden z-50">
       {/* Dropdown icon */}

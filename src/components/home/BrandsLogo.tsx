@@ -1,30 +1,24 @@
-import Nike from "../../assets/brands/nike.png";
-import Adidas from "../../assets/brands/adidas.png";
-import Levis from "../../assets/brands/levis.png";
-import Puma from "../../assets/brands/puma.png";
-import Louis from "../../assets/brands/louis.png";
-
 const BrandsLogo = () => {
   const brandsLogo = [
     {
       id: 1,
-      image: Nike,
+      image: "./images/brands/nike.png",
     },
     {
       id: 2,
-      image: Adidas,
+      image: "./images/brands/adidas.png",
     },
     {
       id: 3,
-      image: Levis,
+      image: "./images/brands/levis.png",
     },
     {
       id: 4,
-      image: Puma,
+      image: "./images/brands/puma.png",
     },
     {
       id: 5,
-      image: Louis,
+      image: "./images/brands/louis.png",
     },
   ];
 

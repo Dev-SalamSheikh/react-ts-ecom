@@ -22,7 +22,7 @@ const BrandCategoryCards: React.FC<BrandCategoryCardsProps> = ({
     <div className="mt-10 md:mt-20 flex items-start gap-8 lg:gap-[60px] pb-10 border-b border-b-dashboardBorder">
       {/* Left side logo */}
       <div className="md:w-2/12 w-3/12">
-        <img src={brandImg} alt="" className="w-full" />
+        <img src={brandImg} alt="" className="w-full md:w-auto" />
       </div>
 
       {/* right side slider */}

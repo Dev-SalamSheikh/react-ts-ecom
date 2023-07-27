@@ -1,29 +1,28 @@
-// Import Icons
-import Icon1 from "../assets/admindropdown/profile.png";
-import Icon2 from "../assets/admindropdown/settings.png";
-import Icon3 from "../assets/admindropdown/logout.png";
 import { NavLink } from "react-router-dom";
+interface AdminDropdownProps {
+  ref2: React.RefObject<HTMLDivElement>;
+}
 
-const AdminDropdown = ({ ref2 }) => {
+const AdminDropdown: React.FC<AdminDropdownProps> = ({ ref2 }) => {
   // Navlinks
   const dropdownMan = [
     {
       id: 1,
       title: "Profile",
       path: "/",
-      image: Icon1,
+      image: "./images/admindropdown/profile.png",
     },
     {
       id: 2,
       title: "Settings",
       path: "/",
-      image: Icon2,
+      image: "./images/admindropdown/settings.png",
     },
     {
       id: 3,
       title: "Logout",
       path: "/",
-      image: Icon3,
+      image: "./images/admindropdown/logout.png",
     },
   ];
 

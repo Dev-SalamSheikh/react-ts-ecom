@@ -12,12 +12,12 @@ const DashboardNavbar = () => {
   const ref2 = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const closePopup = (e) => {
+    const closePopup = (e: MouseEvent) => {
       if (
         ref.current &&
-        !ref.current.contains(e.target) &&
+        !ref.current.contains(e.target as Node) &&
         ref2.current &&
-        !ref2.current.contains(e.target)
+        !ref2.current.contains(e.target as Node)
       ) {
         setDropdown(false);
       }

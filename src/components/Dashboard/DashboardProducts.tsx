@@ -1,7 +1,4 @@
 import DashboardProductCard from "./DashboardProductCard";
-import Tshirt from "../../assets/tshirt.png";
-import sShirt from "../../assets/sweatshirts.png";
-import pant from "../../assets/pants.png";
 
 const DashboardProducts = () => {
   // T-shirt Data
@@ -10,61 +7,61 @@ const DashboardProducts = () => {
       id: 1,
       title: "Product Name",
       price: "$50.00",
-      img: Tshirt,
+      img: "./images/tshirt.png",
     },
     {
       id: 2,
       title: "Product Name",
       price: "$50.00",
-      img: Tshirt,
+      img: "./images/tshirt.png",
     },
     {
       id: 3,
       title: "Product Name",
       price: "$50.00",
-      img: Tshirt,
+      img: "./images/tshirt.png",
     },
     {
       id: 4,
       title: "Product Name",
       price: "$50.00",
-      img: Tshirt,
+      img: "./images/tshirt.png",
     },
     {
       id: 5,
       title: "Product Name",
       price: "$50.00",
-      img: Tshirt,
+      img: "./images/tshirt.png",
     },
     {
       id: 6,
       title: "Product Name",
       price: "$50.00",
-      img: Tshirt,
+      img: "./images/tshirt.png",
     },
     {
       id: 7,
       title: "Product Name",
       price: "$50.00",
-      img: Tshirt,
+      img: "./images/tshirt.png",
     },
     {
       id: 8,
       title: "Product Name",
       price: "$50.00",
-      img: Tshirt,
+      img: "./images/tshirt.png",
     },
     {
       id: 9,
       title: "Product Name",
       price: "$50.00",
-      img: Tshirt,
+      img: "./images/tshirt.png",
     },
     {
       id: 10,
       title: "Product Name",
       price: "$50.00",
-      img: Tshirt,
+      img: "./images/tshirt.png",
     },
   ];
 
@@ -74,125 +71,125 @@ const DashboardProducts = () => {
       id: 1,
       title: "Product Name",
       price: "$50.00",
-      img: sShirt,
+      img: "./images/sweatshirts.png",
     },
     {
       id: 2,
       title: "Product Name",
       price: "$50.00",
-      img: sShirt,
+      img: "./images/sweatshirts.png",
     },
     {
       id: 3,
       title: "Product Name",
       price: "$50.00",
-      img: sShirt,
+      img: "./images/sweatshirts.png",
     },
     {
       id: 4,
       title: "Product Name",
       price: "$50.00",
-      img: sShirt,
+      img: "./images/sweatshirts.png",
     },
     {
       id: 5,
       title: "Product Name",
       price: "$50.00",
-      img: sShirt,
+      img: "./images/sweatshirts.png",
     },
     {
       id: 6,
       title: "Product Name",
       price: "$50.00",
-      img: sShirt,
+      img: "./images/sweatshirts.png",
     },
     {
       id: 7,
       title: "Product Name",
       price: "$50.00",
-      img: sShirt,
+      img: "./images/sweatshirts.png",
     },
     {
       id: 8,
       title: "Product Name",
       price: "$50.00",
-      img: sShirt,
+      img: "./images/sweatshirts.png",
     },
     {
       id: 9,
       title: "Product Name",
       price: "$50.00",
-      img: sShirt,
+      img: "./images/sweatshirts.png",
     },
     {
       id: 10,
       title: "Product Name",
       price: "$50.00",
-      img: sShirt,
+      img: "./images/sweatshirts.png",
     },
   ];
 
-  // Sweet Shirts Data
+  // pants Data
   const pantsData = [
     {
       id: 1,
       title: "Product Name",
       price: "$30.00",
-      img: pant,
+      img: "./images/pants.png",
     },
     {
       id: 2,
       title: "Product Name",
       price: "$30.00",
-      img: pant,
+      img: "./images/pants.png",
     },
     {
       id: 3,
       title: "Product Name",
       price: "$30.00",
-      img: pant,
+      img: "./images/pants.png",
     },
     {
       id: 4,
       title: "Product Name",
       price: "$30.00",
-      img: pant,
+      img: "./images/pants.png",
     },
     {
       id: 5,
       title: "Product Name",
       price: "$30.00",
-      img: pant,
+      img: "./images/pants.png",
     },
     {
       id: 6,
       title: "Product Name",
       price: "$30.00",
-      img: pant,
+      img: "./images/pants.png",
     },
     {
       id: 7,
       title: "Product Name",
       price: "$30.00",
-      img: pant,
+      img: "./images/pants.png",
     },
     {
       id: 8,
       title: "Product Name",
       price: "$30.00",
-      img: pant,
+      img: "./images/pants.png",
     },
     {
       id: 9,
       title: "Product Name",
       price: "$30.00",
-      img: pant,
+      img: "./images/pants.png",
     },
     {
       id: 10,
       title: "Product Name",
       price: "$30.00",
-      img: pant,
+      img: "./images/pants.png",
     },
   ];
 

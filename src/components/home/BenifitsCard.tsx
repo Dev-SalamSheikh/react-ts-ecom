@@ -1,7 +1,3 @@
-import Support from "../../assets/support.png";
-import Return from "../../assets/return.png";
-import Payment from "../../assets/payment.png";
-
 import SupportCard from "./SupportCard";
 
 const BenifitsCard = () => {
@@ -9,19 +5,19 @@ const BenifitsCard = () => {
   const supportData = [
     {
       id: 1,
-      img: Support,
+      img: "./images/support.png",
       heading: "Support 24/7",
       content: "Quick Support",
     },
     {
       id: 2,
-      img: Return,
+      img: "./images/return.png",
       heading: "15 Days Return",
       content: "Product Exchange",
     },
     {
       id: 3,
-      img: Payment,
+      img: "./images/payment.png",
       heading: "Payment Secure",
       content: "100% payment secure",
     },
